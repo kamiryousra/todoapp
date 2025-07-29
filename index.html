@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cute To Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="todo-page">
+      <h1>To do list</h1>
+
+      <div class="todo-grid">
+        <section class="todo-section">
+          <h2>Today</h2>
+          <ul id="today-list" class="task-list">
+            <!-- JS will add inputs here -->
+          </ul>
+          <button onclick="addTask('today')">+ Add Task</button>
+        </section>
+
+        <section class="todo-section" id="quote-section">
+          <h2>✨ You did it!</h2>
+          <div id="quote-box">
+            <p id="quote-text">You can do it 💖</p>
+          </div>
+        </section>
+
+        <section class="todo-section">
+          <h2>Tomorrow</h2>
+          <ul id="tomorrow-list" class="task-list">
+            <!-- JS will add inputs here -->
+          </ul>
+          <button onclick="addTask('tomorrow')">+ Add Task</button>
+        </section>
+
+        <section class="todo-section">
+          <h2>Notes</h2>
+          <textarea placeholder="Any other notes..."></textarea>
+        </section>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
